@@ -1,70 +1,81 @@
 # Sala de Espera - Conectando Dentistas e Consultórios
 
-## Visão Geral
-**Sala de Espera** é uma plataforma que conecta dentistas e consultórios odontológicos. Ela permite que consultórios encontrem profissionais especializados com flexibilidade, e que dentistas encontrem vagas adequadas às suas especializações e disponibilidade.
+## Descrição
+O **Sala de Espera** é uma plataforma desenvolvida para conectar dentistas e consultórios odontológicos de forma rápida e eficaz. O objetivo é facilitar a publicação de vagas por consultórios e a busca de oportunidades por dentistas, garantindo flexibilidade, agilidade e segurança para ambas as partes. Dentistas podem se candidatar a vagas que melhor se adequem às suas especializações e disponibilidade, enquanto os consultórios encontram profissionais qualificados para atender suas demandas.
+
+## Stacks Utilizadas
+
+### Frontend:
+- **React**: Biblioteca JavaScript para construção da interface do usuário.
+- **Redux**: Gerenciamento de estado global da aplicação.
+- **Material-UI**: Componentes de interface de usuário customizáveis.
+- **Axios**: Realização de requisições HTTP.
+
+### Backend:
+- **Node.js**: Ambiente de execução JavaScript no servidor.
+- **Express**: Framework para construção de APIs.
+- **Sequelize**: ORM para integração com o banco de dados.
+- **JWT (JSON Web Token)**: Autenticação e gerenciamento de sessões.
+- **AdminJS**: Painel administrativo para gerenciamento de dados.
+
+### Banco de Dados:
+- **PostgreSQL**: Sistema de banco de dados relacional.
+- **Sequelize**: Migrations, Models e Seeders para controle do banco de dados.
+
+### CI/CD e Infraestrutura:
+- **Docker**: Containerização da aplicação para ambientes padronizados.
+- **AWS**: EC2 para hospedagem do backend e frontend, RDS para o banco de dados.
+- **GitHub Actions**: Pipeline de integração contínua e deploy automatizado.
 
 ## Funcionalidades Principais
-- **Cadastro de Perfis:** Consultórios e dentistas podem criar e gerenciar seus perfis.
-- **Publicação de Vagas:** Consultórios podem postar oportunidades de trabalho.
-- **Busca Avançada:** Dentistas podem procurar vagas com filtros detalhados.
-- **Candidatura Direta:** Dentistas se candidatam diretamente às vagas de seu interesse.
-- **Sistema de Notificações:** Usuários são notificados sobre novas oportunidades ou candidaturas.
-- **Avaliações:** Dentistas e consultórios podem se avaliar mutuamente.
-- **Perfis Verificados:** Sistema de verificação de perfis para garantir segurança e autenticidade.
-
-## Tecnologias Utilizadas
-- **Frontend:** React, Redux, Material-UI
-- **Backend:** Node.js, Express, Sequelize
-- **Banco de Dados:** PostgreSQL, AWS RDS
-- **Autenticação:** JWT, Auth0
-- **CI/CD:** Docker, GitHub Actions
-- **Infraestrutura:** AWS EC2, S3
-
-## Instalação e Configuração
-
-### Requisitos
-- Node.js (>= 14.x)
-- npm ou yarn
-- Docker
-
-### Instalação
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/sala-de-espera.git
-    ```
-2. Instale as dependências do backend:
-    ```bash
-    cd backend
-    npm install
-    ```
-3. Instale as dependências do frontend:
-    ```bash
-    cd frontend
-    npm install
-    ```
-
-### Configuração
-1. Configure as variáveis de ambiente criando o arquivo `.env` na raiz do backend e frontend, conforme o exemplo em `.env.example`.
-
-2. Inicie o ambiente de desenvolvimento:
-    ```bash
-    npm run dev
-    ```
+- **Cadastro de Perfis**: Consultórios e dentistas podem criar e gerenciar seus perfis.
+- **Publicação de Vagas**: Consultórios podem publicar vagas para diferentes especializações odontológicas.
+- **Busca de Oportunidades**: Dentistas podem buscar vagas utilizando filtros avançados.
+- **Candidatura Direta**: Dentistas podem se candidatar diretamente às vagas publicadas.
+- **Notificações**: Sistema de notificações em tempo real para candidaturas e atualizações.
+- **Avaliações**: Sistema de avaliação mútuo entre dentistas e consultórios.
+- **Autenticação JWT**: Sistema seguro de login com tokens JWT.
+- **Painel AdminJS**: Ferramenta de gerenciamento para administradores da plataforma.
 
 ## Estrutura do Projeto
-- **backend/**: Contém a lógica do servidor, rotas, e integrações com o banco de dados.
-- **frontend/**: Interface de usuário, composta por páginas e componentes React.
-- **docker/**: Arquivos de configuração Docker para backend e frontend.
 
-## Contribuição
-Contribuições são bem-vindas! Siga as etapas abaixo para colaborar:
-1. Faça um fork do repositório.
-2. Crie uma branch com suas alterações (`git checkout -b minha-feature`).
-3. Faça o commit das alterações (`git commit -m 'Adiciona nova feature'`).
-4. Envie para a branch (`git push origin minha-feature`).
-5. Abra um Pull Request.
-
----
-
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+```bash
+sala-de-espera/
+│
+├── backend/
+│   ├── src/
+│   │   ├── admin/              # Configuração do painel AdminJS
+│   │   ├── auth/               # Middleware e lógica de autenticação (JWT)
+│   │   ├── config/             # Configurações gerais do backend e banco de dados
+│   │   ├── controllers/        # Controladores para lidar com as requisições
+│   │   ├── middlewares/        # Middlewares para validação e segurança
+│   │   ├── migrations/         # Migrations do Sequelize para versionamento do banco de dados
+│   │   ├── models/             # Definição dos modelos de dados no Sequelize
+│   │   ├── routes/             # Rotas para os endpoints da API (CRUD de usuários, vagas, etc.)
+│   │   ├── seeders/            # Seeders para popular o banco de dados com dados iniciais
+│   │   └── utils/              # Utilitários diversos (formatação, validações, etc.)
+│   ├── .env                    # Arquivo de variáveis de ambiente
+│   └── server.js               # Ponto de entrada da API
+│
+├── frontend/
+│   ├── public/                 # Arquivos públicos do React
+│   ├── src/
+│   │   ├── assets/             # Imagens, ícones, fontes
+│   │   ├── components/         # Componentes reutilizáveis do React
+│   │   ├── pages/              # Telas principais da aplicação (Login, Registro, Dashboard, etc.)
+│   │   ├── redux/              # Configuração do Redux (actions, reducers, store)
+│   │   ├── services/           # Serviços para consumir a API (Axios)
+│   │   └── App.js              # Arquivo principal de configuração das rotas e layout
+│   └── .env                    # Arquivo de variáveis de ambiente para o frontend
+│
+├── database/                   # Contém a configuração do banco de dados e scripts relacionados
+│   ├── migrations/             # Arquivos de migração do banco de dados (Sequelize)
+│   ├── models/                 # Definições dos modelos de dados (ORM Sequelize)
+│   └── seeders/                # Seeders para dados de exemplo e população inicial
+│
+├── docker/
+│   ├── Dockerfile.backend       # Dockerfile para container do backend
+│   ├── Dockerfile.frontend      # Dockerfile para container do frontend
+│   └── docker-compose.yml       # Arquivo de composição dos containers (backend, frontend e banco de dados)
+│
+└── README.md                    # Documentação do projeto
