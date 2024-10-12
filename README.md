@@ -80,5 +80,6 @@ sala-de-espera/
 │
 └── README.md                    # Documentação do projeto
 
+```
 
 - **Arquivo README.md gerado por inteligência artificial.**
