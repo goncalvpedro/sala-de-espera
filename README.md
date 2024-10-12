@@ -54,7 +54,7 @@ sala-de-espera/
 │   │   ├── routes/             # Rotas para os endpoints da API (CRUD de usuários, vagas, etc.)
 │   │   ├── seeders/            # Seeders para popular o banco de dados com dados iniciais
 │   │   └── utils/              # Utilitários diversos (formatação, validações, etc.)
-│   ├── .env                    # Arquivo de variáveis de ambiente
+│   ├── app.js                    # Arquivo de variáveis de ambiente
 │   └── server.js               # Ponto de entrada da API
 │
 ├── frontend/
@@ -79,3 +79,6 @@ sala-de-espera/
 │   └── docker-compose.yml       # Arquivo de composição dos containers (backend, frontend e banco de dados)
 │
 └── README.md                    # Documentação do projeto
+
+
+- **Arquivo README.md gerado por inteligência artificial.**
