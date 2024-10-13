@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../../db");
 
 const JobTag = sequelize.define(
-  "JogTag",
+  "JobTag",
   {
     id: {
       type: DataTypes.INTEGER,
@@ -32,7 +32,7 @@ const JobTag = sequelize.define(
     },
   },
   {
-    tableName: "job-tags",
+    tableName: "job_tags",
     timestamps: true,
   }
 );

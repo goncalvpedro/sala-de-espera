@@ -50,8 +50,9 @@ const JobPosting = sequelize.define(
     },
   },
   {
-    tableName: "job-postings",
+    tableName: "job_postings",
     timestamps: true,
+    underscored: true,
   }
 );
 

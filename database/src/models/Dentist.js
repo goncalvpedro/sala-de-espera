@@ -25,7 +25,7 @@ const Dentist = sequelize.define(
       unique: true,
       allowNull: false,
     },
-    specialization: {
+    specializations: {
       type: DataTypes.JSONB,
       allowNull: true,
     },
@@ -33,10 +33,13 @@ const Dentist = sequelize.define(
       type: DataTypes.TEXT,
       allowNull: true,
     },
+    availability: {
+      type: DataTypes.STRING(100),
+      allowNull: true,
+    },
   },
   {
     tableName: "dentists",
-    timestamps: true,
   }
 );
 

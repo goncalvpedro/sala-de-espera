@@ -1,3 +1,5 @@
+const { underscoredIf } = require("sequelize/lib/utils");
+
 require("dotenv").config();
 
 module.exports = {
@@ -9,6 +11,7 @@ module.exports = {
     dialect: process.env.DB_DIALECT,
     define: {
       timestamps: true,
+      underscored: true,
     },
   },
 };
