@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 const setupAdminJs = () => {
   const adminJs = new AdminJS({
     databases: [database],
-    rootPath: "/admin",
+    rootPath: process.env.ADMINJS_PATH,
     resources: resources,
   });
 
