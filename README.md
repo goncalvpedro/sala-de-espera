@@ -54,8 +54,8 @@ sala-de-espera/
 │   │   ├── routes/             # Rotas para os endpoints da API (CRUD de usuários, vagas, etc.)
 │   │   ├── seeders/            # Seeders para popular o banco de dados com dados iniciais
 │   │   └── utils/              # Utilitários diversos (formatação, validações, etc.)
-│   ├── app.js                    # Arquivo de variáveis de ambiente
-│   └── server.js               # Ponto de entrada da API
+│   ├── app.js                  # Configura um servidor Express e painel AdminJS para administração.
+│   └── server.js               # Ligação com o servidor
 │
 ├── frontend/
 │   ├── public/                 # Arquivos públicos do React
