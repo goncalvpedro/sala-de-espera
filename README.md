@@ -5,24 +5,24 @@ O **Sala de Espera** é uma plataforma desenvolvida para conectar dentistas e co
 
 ## Stacks Utilizadas
 
-### Frontend:
+### Frontend: (To be done)
 - **React**: Biblioteca JavaScript para construção da interface do usuário.
 - **Redux**: Gerenciamento de estado global da aplicação.
 - **Material-UI**: Componentes de interface de usuário customizáveis.
 - **Axios**: Realização de requisições HTTP.
 
-### Backend:
+### Backend: (Doing)
 - **Node.js**: Ambiente de execução JavaScript no servidor.
 - **Express**: Framework para construção de APIs.
 - **Sequelize**: ORM para integração com o banco de dados.
 - **JWT (JSON Web Token)**: Autenticação e gerenciamento de sessões.
 - **AdminJS**: Painel administrativo para gerenciamento de dados.
 
-### Banco de Dados:
+### Banco de Dados: (Doing)
 - **PostgreSQL**: Sistema de banco de dados relacional.
 - **Sequelize**: Migrations, Models e Seeders para controle do banco de dados.
-
-### CI/CD e Infraestrutura:
+ 
+### CI/CD e Infraestrutura: (To be done)
 - **Docker**: Containerização da aplicação para ambientes padronizados.
 - **AWS**: EC2 para hospedagem do backend e frontend, RDS para o banco de dados.
 - **GitHub Actions**: Pipeline de integração contínua e deploy automatizado.
@@ -82,4 +82,4 @@ sala-de-espera/
 
 ```
 
-- **Arquivo README.md gerado por inteligência artificial.**
+**Arquivo README.md gerado por inteligência artificial.**
