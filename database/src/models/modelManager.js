@@ -33,7 +33,7 @@ Application.belongsTo(JobPosting, { foreignKey: 'job_posting_id' });
 User.hasMany(Notification, { foreignKey: 'user_id' });
 Notification.belongsTo(User, { foreignKey: 'user_id' });
 
-// Relacionamento entre User e Review (N:N) - Um usuário pode avaliar e ser avaliado
+// Relacionamento entre User e Review (N:N)
 User.hasMany(Review, { as: 'ReviewsGiven', foreignKey: 'reviewer_id' });
 User.hasMany(Review, { as: 'ReviewsReceived', foreignKey: 'reviewed_id' });
 Review.belongsTo(User, { as: 'Reviewer', foreignKey: 'reviewer_id' });

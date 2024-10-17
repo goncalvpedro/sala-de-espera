@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Dentist-1-hex { color: #3B5E8C; }
+.Dentist-2-hex { color: #D98E04; }
+.Dentist-3-hex { color: #EBEAE5; }
+.Dentist-4-hex { color: #F54E37; }
+.Dentist-5-hex { color: #B81C11; }
+
+/* Color Theme Swatches in RGBA */
+.Dentist-1-rgba { color: rgba(59, 94, 140, 1); }
+.Dentist-2-rgba { color: rgba(217, 142, 4, 1); }
+.Dentist-3-rgba { color: rgba(235, 234, 229, 1); }
+.Dentist-4-rgba { color: rgba(245, 78, 55, 1); }
+.Dentist-5-rgba { color: rgba(184, 28, 17, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Dentist-1-hsla { color: hsla(214, 40, 39, 1); }
+.Dentist-2-hsla { color: hsla(38, 96, 43, 1); }
+.Dentist-3-hsla { color: hsla(50, 13, 90, 1); }
+.Dentist-4-hsla { color: hsla(7, 90, 58, 1); }
+.Dentist-5-hsla { color: hsla(3, 83, 39, 1); }

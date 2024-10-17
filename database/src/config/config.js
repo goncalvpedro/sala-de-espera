@@ -1,5 +1,3 @@
-const { underscoredIf } = require("sequelize/lib/utils");
-
 require("dotenv").config();
 
 module.exports = {
